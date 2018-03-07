@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PopQuiz</string>
+    <string name="nameEditText">Name</string>
+    <string name="passwordEditText">Password....</string>
+    <string name="usernameEditText">Username</string>
+    <string name="UsernameEditText">Username...</string>
+</resources>
