@@ -7,14 +7,14 @@
     tools:context="com.example.shreyas.popquiz.RegisterActivity">
 
     <EditText
-        android:id="@+id/NameET"
+        android:id="@+id/EmailET2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="30dp"
         android:ems="10"
-        android:hint="Name..."
+        android:hint="Email..."
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,7 +32,7 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/NameET" />
+        app:layout_constraintTop_toBottomOf="@+id/EmailET2" />
 
     <EditText
         android:id="@+id/PasswordET2"
@@ -55,6 +55,7 @@
         android:layout_marginEnd="148dp"
         android:layout_marginStart="148dp"
         android:layout_marginTop="10dp"
+        android:onClick="registerUser"
         android:text="REGISTER"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

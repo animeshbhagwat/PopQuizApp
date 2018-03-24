@@ -28,13 +28,13 @@ public class QuizActivity extends AppCompatActivity {
 
         r =new Random();
 
-        Answer1 = (Button) findViewById(R.id.Answer1);
-        Answer2 = (Button) findViewById(R.id.Answer2);
-        Answer3 = (Button) findViewById(R.id.Answer3);
-        Answer4 = (Button) findViewById(R.id.Answer4);
+        Answer1 = findViewById(R.id.Answer1);
+        Answer2 = findViewById(R.id.Answer2);
+        Answer3 = findViewById(R.id.Answer3);
+        Answer4 = findViewById(R.id.Answer4);
 
-        ScoreET = (TextView) findViewById(R.id.ScoreET);
-        QuestionET = (TextView) findViewById(R.id.QuestionET);
+        ScoreET = findViewById(R.id.ScoreET);
+        QuestionET = findViewById(R.id.QuestionET);
 
         ScoreET.setText("Score :"+nScore);
 

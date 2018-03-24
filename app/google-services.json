@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "57577978639",
+    "firebase_url": "https://popquiz-fad55.firebaseio.com",
+    "project_id": "popquiz-fad55",
+    "storage_bucket": "popquiz-fad55.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:57577978639:android:55f38eff33ff1a66",
+        "android_client_info": {
+          "package_name": "com.example.shreyas.popquiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "57577978639-b3e4g50ige4duq50kfs9tgnsltulm0ko.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.shreyas.popquiz",
+            "certificate_hash": "b47a4c454f78a7ca75f2ded7912a6782a2549f4a"
+          }
+        },
+        {
+          "client_id": "57577978639-aggv942rhf0jch9bjiflpbusejqkbpu1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADx1IAXeyCkRh4tFFlyyr47adcbso0wL0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "57577978639-aggv942rhf0jch9bjiflpbusejqkbpu1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
