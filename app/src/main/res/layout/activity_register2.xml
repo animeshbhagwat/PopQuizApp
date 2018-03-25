@@ -4,52 +4,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.shreyas.popquiz.RegisterActivity"
-    tools:layout_editor_absoluteY="81dp">
+    tools:context="com.example.shreyas.popquiz.Register2Activity">
 
     <EditText
-        android:id="@+id/RollET2"
+        android:id="@+id/NameET"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:ems="10"
-        android:hint="Roll No.."
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="@+id/PasswordET2"
-        app:layout_constraintTop_toBottomOf="@+id/PasswordET2" />
-
-    <EditText
-        android:id="@+id/EmailET2"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="30dp"
         android:ems="10"
-        android:hint="Email..."
+        android:hint="Teacher Name..."
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/PasswordET2"
+        android:id="@+id/EmailET4"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Email..."
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NameET" />
+
+    <EditText
+        android:id="@+id/PasswordET4"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="10dp"
         android:ems="10"
         android:hint="Password..."
         android:inputType="textPassword"
-        app:layout_constraintStart_toStartOf="@+id/EmailET2"
-        app:layout_constraintTop_toBottomOf="@+id/EmailET2" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EmailET4" />
 
     <Button
-        android:id="@+id/ResgiterET2"
+        android:id="@+id/ResgiterET4"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="148dp"
+        android:layout_marginStart="148dp"
         android:layout_marginTop="10dp"
         android:text="REGISTER"
         android:textColor="#FFFFFF"
         android:background="#F44336"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/RollET2" />
+        app:layout_constraintTop_toBottomOf="@+id/PasswordET4" />
+
+
 </android.support.constraint.ConstraintLayout>
