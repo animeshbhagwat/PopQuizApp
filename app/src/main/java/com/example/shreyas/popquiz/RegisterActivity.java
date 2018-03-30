@@ -14,12 +14,15 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class RegisterActivity extends AppCompatActivity {
-    private EditText EmailET, RollET2, PasswordET2;
+    private EditText EmailET, RollET, PasswordET2;
     private Button RegisterET2;
     private FirebaseAuth firebaseAuth;
     private ProgressDialog progressDialog;
+    private DatabaseReference databaseReference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,21 +30,20 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
         final EditText EmailET2 = findViewById(R.id.EmailET2);
-        EditText RollET2 = findViewById(R.id.RollET2);
+        final EditText RollET = findViewById(R.id.RollET2);
         final EditText PasswordET2 = findViewById(R.id.PasswordET2);
-        Button RegisterET2 = findViewById(R.id.ResgiterET2);
+        Button RegisterET2= findViewById(R.id.RegisterET2);
         firebaseAuth = FirebaseAuth.getInstance();
         progressDialog =new ProgressDialog(this);
-
-
-
+        databaseReference = FirebaseDatabase.getInstance().getReference("student");
 
         RegisterET2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                String Email = EmailET2.getText().toString().trim();
+                final String Email = EmailET2.getText().toString().trim();
                 String Password = PasswordET2.getText().toString().trim();
+                final String rollNo = RollET.getText().toString().trim();
 
                 if (TextUtils.isEmpty(Email)) {
                     //email is empty
@@ -62,7 +64,9 @@ public class RegisterActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()) {
-                            Toast.makeText(getApplicationContext(),"Registered Successfully",Toast.LENGTH_SHORT).show();
+                            String id =databaseReference.push().getKey();
+                            Student student=new Student(id,rollNo,Email);
+                            databaseReference.child(id).setValue(student);
                             progressDialog.dismiss();
                         }
                         else{

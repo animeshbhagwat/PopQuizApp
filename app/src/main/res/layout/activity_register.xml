@@ -11,24 +11,25 @@
         android:id="@+id/RollET2"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:ems="10"
         android:hint="Roll No.."
         android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="@+id/PasswordET2"
-        app:layout_constraintTop_toBottomOf="@+id/PasswordET2" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/EmailET2"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:ems="10"
         android:hint="Email..."
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RollET2" />
 
     <EditText
         android:id="@+id/PasswordET2"
@@ -38,18 +39,21 @@
         android:ems="10"
         android:hint="Password..."
         android:inputType="textPassword"
-        app:layout_constraintStart_toStartOf="@+id/EmailET2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/EmailET2" />
 
     <Button
-        android:id="@+id/ResgiterET2"
-        android:layout_width="250dp"
+        android:id="@+id/RegisterET2"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="67dp"
+        android:layout_marginStart="67dp"
         android:layout_marginTop="10dp"
+        android:background="#F44336"
         android:text="REGISTER"
         android:textColor="#FFFFFF"
-        android:background="#F44336"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/RollET2" />
+        app:layout_constraintTop_toBottomOf="@+id/PasswordET2" />
 </android.support.constraint.ConstraintLayout>
