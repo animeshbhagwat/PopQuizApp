@@ -24,6 +24,7 @@
         <activity android:name=".Register2Activity" />
         <activity android:name=".TeacherActivity" />
         <activity android:name=".StudentActivity" />
+        <activity android:name=".FinishActivity"></activity>
     </application>
 
 </manifest>
